@@ -1,6 +1,6 @@
 # ✈️ PRC 2025 Challenge - Fuel Prediction
 
-**Performance:** RMSE ~224 (Top 8) 🏆  
+**Performance:** RMSE ~211 (Top 2) 🏆  
 **Goal:** Predict aircraft fuel consumption based on trajectory data.
 
 ## 📋 Overview
@@ -29,7 +29,7 @@ The project relies on a robust stack of Python libraries for data processing, mo
 ```
 ├── clean_trajectories.py    # Step 1: Cleans raw ADS-B trajectories (outliers, interpolation)
 ├── feature_engineering.py   # Step 2: Generates physical features from trajectories
-├── data_utils.py            # 🧠 Core logic: Centralized data loading & context feature generation
+├── data_utils.py            # Core logic: Centralized data loading & context feature generation
 ├── optimize_infinity.py     # Step 3: Hyperparameter optimization (Optuna) for XGB/LGB/CatBoost
 ├── train_blend.py           # Step 4: Final training, blending, and submission generation
 ├── run_robust.py            # Utility: Robust runner for long processes (auto-restart)
